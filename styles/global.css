@@ -14,12 +14,10 @@
   --snitap-joy-light: #f472b6;
   --snitap-leaf-mid: #16a34a;
 
-  /* base */
   --text: #000000;
   --highlights: #000000;
   --background: #fafafa;
 
-  /* text */
   --ff-base: 'Montserrat', sans-serif;
 
   --text-sm: 0.875rem;
@@ -40,7 +38,7 @@ h2 {
 
 h1 {
   font-size: var(--text-xl);
-  line-height: 1.25rem;
+  line-height: 1.25;
 }
 
 h2 {
