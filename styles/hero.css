@@ -4,6 +4,7 @@ section.hero {
   padding: 2.5rem 2rem;
   margin-inline: auto;
 
+  /* flex-direction: column-reverse; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -100,27 +101,41 @@ section.hero {
       width: 94%;
       top: 3%;
       left: 3%;
+
+      transform: translateX(200%);
+      animation: slideIn 3s ease forwards;
     }
 
     & img[src*='patins'] {
       z-index: 0;
+
+      transform: translateX(200%);
+
+      animation: slideIn 3s 200ms ease forwards;
     }
 
     & img[src*='stars-1'] {
       max-width: 5.5rem;
       top: 30%;
       z-index: 0;
+
+      opacity: 0;
+      transform: translateX(400%);
+      animation: slideIn 2s 800ms ease forwards, appear 100ms 800ms forwards;
     }
 
     & img[src*='stars-2'] {
       max-width: 2.5rem;
       right: 0;
       bottom: 30%;
+
+      transform: translateX(400%);
+      animation: slideIn 2.2s 800ms ease forwards;
     }
   }
 }
 
-/* @keyframes slideIn {
+@keyframes slideIn {
   50% {
     transform: translateX(-20px);
   }
@@ -134,7 +149,7 @@ section.hero {
   to {
     opacity: 1;
   }
-} */
+}
 
 @keyframes slideUp {
   /* radical static */
