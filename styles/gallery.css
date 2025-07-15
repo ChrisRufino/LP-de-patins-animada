@@ -108,3 +108,22 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media (width <= 50em) {
+  section.gallery {
+    width: 100%;
+
+    & .content {
+      display: grid;
+      gap: 10px;
+
+      grid-template-areas:
+        'A A A'
+        'B B B'
+        'C C C'
+        'D D D';
+
+      gap: 2.5rem;
+    }
+  }
+}
